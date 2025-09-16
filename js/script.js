@@ -20,4 +20,40 @@ function renderizarTarefas() {
     }
 }
 
+renderizarTarefas();
 
+btn.onclick = function () {
+    let novaTarefa = input.value;
+
+    if (novaTarefa !== "") {
+        tarefas.push(novaTarefa);
+        renderizarTarefas();
+        input.value = '';
+        removerSpans();
+        salvarDadosNoStorage();
+    } else {
+        removerSpans();
+        let span = document.createElement('span');
+        span.setAttribute('class', 'alert alert-warning');
+        let msg = document.createTextNode('Você precisa digitar a tarefa que deseja registrar!');
+        span.appendChild(msg);
+        card.appendChild(span);
+    }
+}
+
+function removerSpans() {
+    let spans = document.querySelectorAll('span');
+    for (let i = 0; i < spans.length; i++) {
+        card.removeChild(spans[i]);
+    }
+}
+
+function deletarTarefas(tar) {
+    tarefas.splice(tarefas.indexOf(tar.textContent), 1);
+    renderizarTarefas();
+    salvarDadosNoStorage();
+}
+
+function salvarDadosNoStorage() {
+    localStorage.setItem('tarefas', JSON.stringify(tarefas));
+}
