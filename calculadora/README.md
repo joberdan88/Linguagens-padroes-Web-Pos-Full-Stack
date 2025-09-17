@@ -17,6 +17,7 @@ Este projeto é uma **calculadora funcional** desenvolvida com **HTML5**, **CSS3
 
 ##  Estrutura do Projeto
 calculadora/ 
+
 ├── index.html 
 
 ├── css/ │   
