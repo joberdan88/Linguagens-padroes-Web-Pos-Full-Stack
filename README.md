@@ -26,8 +26,11 @@ Este é um projeto simples e funcional de **Bloco de Notas** desenvolvido com **
 ## 📁 Estrutura do Projeto
 bloco-de-notas/ 
 ├── index.html 
+
 ├── pagina2.html 
+
 ├── css/ │   └── style.css 
+
 ├── js/ │   └── script.js
 
 ---
