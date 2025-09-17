@@ -20,7 +20,7 @@ calculadora/
 
 ├── index.html 
 
-├── css/ │   
+├── css/   
     └── style.css 
 
 └── scripts/ 
