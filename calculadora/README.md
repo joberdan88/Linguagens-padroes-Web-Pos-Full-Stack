@@ -20,12 +20,9 @@ calculadora/
 
 ├── index.html 
 
-├── css/   
-    └── style.css 
+├── css/    └── style.css 
 
-└── scripts/ 
-    └── script.js
-
+└── scripts/     └── script.js
 
 ---
 
