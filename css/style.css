@@ -1,81 +1,66 @@
-@import url("https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap");
-
 body {
-    margin: 0;
-    padding: 0;
-    font: 14px "Roboto", sans-serif;
+    background-color: #f4f4f4;
+    font-family: Arial, sans-serif;
     color: #333;
-    background: #eaebec;
-    -webkit-font-smoothing: antialiased !important;
+    margin: 0;
 }
 
-.cabecalho {
-    height: 40px;
-    padding: 30px;
-    text-align: left;
-    background: red;
-    overflow: hidden;
-}
-
-.menu {
-    background-color: green;
-    overflow: hidden;
+.cabecalho,
+.rodape {
+    background-color: #343a40;
+    color: white;
+    padding: 20px;
+    text-align: center;
 }
 
 .menu ul {
-    margin-right: 10%;
-    margin-left: 10%;
-}
-
-.menu ul,
-li {
+    list-style: none;
     padding: 0;
+    display: flex;
+    justify-content: center;
+    background-color: #ffffff;
     margin: 0;
+    border-bottom: 1px solid #ddd;
 }
 
-.menu li,
-a {
-    color: #ffffff;
-    text-decoration: none;
-    display: inline-block;
+.menu li {
+    margin: 0 15px;
 }
 
 .menu a {
-    padding: 15px 30px;
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
 }
 
 .menu a:hover {
-    background-color: white;
-    color: black;
+    color: #0056b3;
 }
 
 .row {
-    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
 }
 
 #secao1 {
-    float: left;
-    width: 70%;
-    background-color: greenyellow;
-    margin: 10px;
+    flex: 2;
+    padding: 20px;
+    background-color: #ffffff;
+    margin-right: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
 }
 
 #secao2 {
-    float: left;
-    width: 25%;
-    background-color: yellow;
-    margin: 10px;
+    flex: 1;
+    padding: 20px;
+    background-color: #e9ecef;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
 }
 
-.row::after {
-    content: "";
-    display: table;
-    clear: both;
-}
-
-.rodape {
-    padding: 30px;
-    background: yellow;
-    text-align: center;
-    margin-top: 20px;
+h2,
+h3 {
+    margin-top: 0;
 }
