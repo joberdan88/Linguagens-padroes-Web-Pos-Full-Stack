@@ -33,6 +33,15 @@ bloco-de-notas/
 
 ├── js/ │   └── script.js
 
+
+calculadora/ 
+
+├── index.html 
+
+├── css/    └── style.css 
+
+└── scripts/     └── script.js
+
 ---
 
 ##  Interface
